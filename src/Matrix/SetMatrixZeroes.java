@@ -44,12 +44,34 @@ public class SetMatrixZeroes {
         }
     }
 
-
+    //Optimal Approach
+    public void setZeroBetter(int[][] matrix){
+        int n = matrix.length;
+        int m = matrix[0].length;
+        boolean[] rowZero=new boolean[n];
+        boolean[] colZero=new boolean[m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(matrix[i][j]==0){
+                    rowZero[i]=true;
+                    colZero[j]=true;
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(rowZero[i] || colZero[j]){
+                    matrix[i][j]=0;
+                }
+            }
+        }
+    }
 
     public static void main(String[] args) {
             int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
             SetMatrixZeroes smz = new SetMatrixZeroes();
-            smz.setZeroBrute(matrix);
+//            smz.setZeroBrute(matrix);
+            smz.setZeroBetter(matrix);
              for(int i=0;i<matrix.length;i++) {
                  for (int j = 0; j < matrix[0].length; j++) {
                      System.out.print(matrix[i][j] + " ");
