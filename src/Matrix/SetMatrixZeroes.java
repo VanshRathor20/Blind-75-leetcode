@@ -4,6 +4,19 @@ public class SetMatrixZeroes {
     //Brute Force Approach
     int n;
     int m;
+    
+    private void validateRectangularMatrix(int[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
+            return;
+        }
+        int cols = matrix[0].length;
+        for (int i = 1; i < matrix.length; i++) {
+            if (matrix[i] == null || matrix[i].length != cols) {
+                throw new IllegalArgumentException("Matrix requires a rectangular shape.");
+            }
+        }
+    }
+    
     private void markRow(int[][] matrix,int row){
         for(int col=0;col<m;col++){
             if(matrix[row][col]!=0){
@@ -19,9 +32,10 @@ public class SetMatrixZeroes {
         }
     }
     public void setZeroBrute(int[] [] matrix){
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return;
         }
+        validateRectangularMatrix(matrix);
         n = matrix.length;
         m = matrix[0].length;
 
@@ -46,6 +60,10 @@ public class SetMatrixZeroes {
 
     //Optimal Approach
     public void setZeroBetter(int[][] matrix){
+        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
+            return;
+        }
+        validateRectangularMatrix(matrix);
         int n = matrix.length;
         int m = matrix[0].length;
         boolean[] rowZero=new boolean[n];
@@ -70,11 +88,10 @@ public class SetMatrixZeroes {
     public static void main(String[] args) {
             int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
             SetMatrixZeroes smz = new SetMatrixZeroes();
-//            smz.setZeroBrute(matrix);
             smz.setZeroBetter(matrix);
-             for(int i=0;i<matrix.length;i++) {
-                 for (int j = 0; j < matrix[0].length; j++) {
-                     System.out.print(matrix[i][j] + " ");
+             for(int[] row : matrix) {
+                 for (int val : row) {
+                     System.out.print(val + " ");
                  }
                  System.out.println();
              }
