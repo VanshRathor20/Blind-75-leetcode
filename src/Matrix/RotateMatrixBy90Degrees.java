@@ -1,6 +1,20 @@
 package Matrix;
 
 public class RotateMatrixBy90Degrees {
+
+    //brute
+     public int[][] rotateBrute(int[][] matrix) {
+         int n = matrix.length;
+         int[][] rotated = new int[n][n];
+         for(int i=0;i<n;i++){
+             for(int j=0;j<n;j++){
+                 rotated[j][n-i-1] = matrix[i][j];
+             }
+
+         }
+         return rotated;
+     }
+
     //optimal approach: first transpose the matrix and then reverse each row
     public void rotate(int[][] matrix) {
         int n =matrix.length;
@@ -27,7 +41,7 @@ public class RotateMatrixBy90Degrees {
     public static void main(String[] args) {
         RotateMatrixBy90Degrees obj = new RotateMatrixBy90Degrees();
         int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        obj.rotate(matrix);
+        obj.rotateBrute(matrix);
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 System.out.print(matrix[i][j]+" ");
