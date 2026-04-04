@@ -1,6 +1,15 @@
 package LinkedList;
 
 public class DetectLloopinLL {
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
+
     public boolean hasCycle(ListNode head) {
         if (head == null) {
             return false; // An empty list cannot have a cycle
