@@ -2,9 +2,7 @@ package Matrix;
 
 public class SetMatrixZeroes {
     //Brute Force Approach
-    int n;
-    int m;
-    
+     int n;
     private void validateRectangularMatrix(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return;
@@ -18,7 +16,7 @@ public class SetMatrixZeroes {
     }
     
     private void markRow(int[][] matrix,int row){
-        for(int col=0;col<m;col++){
+        for(int col=0;col<matrix[row].length;col++){
             if(matrix[row][col]!=0){
                 matrix[row][col]=-1;
             }
@@ -26,7 +24,7 @@ public class SetMatrixZeroes {
     }
     private void markCol(int[][] matrix,int col){
         for(int i=0;i<n;i++){
-            if(matrix[i][col]!=0){
+            if(matrix[i] != null && col < matrix[i].length && matrix[i][col]!=0){
                 matrix[i][col]=-1;
             }
         }
@@ -35,12 +33,13 @@ public class SetMatrixZeroes {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return;
         }
-        validateRectangularMatrix(matrix);
         n = matrix.length;
-        m = matrix[0].length;
 
         for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+            if (matrix[i] == null) {
+                continue;
+            }
+            for(int j=0;j<matrix[i].length;j++){
                 if(matrix[i][j]==0){
                     markRow(matrix,i);
                     markCol(matrix,j);  
@@ -49,7 +48,10 @@ public class SetMatrixZeroes {
         }     
         
         for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+            if (matrix[i] == null) {
+                continue;
+            }
+            for(int j=0;j<matrix[i].length;j++){
                 if(matrix[i][j]==-1){
                     matrix[i][j]=0;
                 }
