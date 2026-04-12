@@ -41,13 +41,40 @@ public class ThreeSum {
         // Convert set to list
         return new ArrayList<>(ans);
     }
+
+    // optimal approach using sorting and two pointers
+    public List<List<Integer>> threeSumOptimal(int[] arr,int target){
+        Arrays.sort(arr);
+        List<List<Integer>> ans=new ArrayList<>();
+        for(int i=0;i<arr.length;i++){
+            if(i>0 && arr[i]==arr[i-1]) continue; // skip duplicates - check i>0 first
+            int left=i+1, right=arr.length-1;
+            while(left<right){
+                int sum=arr[i]+arr[left]+arr[right];
+                if(sum==target) {
+                    ans.add(Arrays.asList(arr[i], arr[left], arr[right]));
+                    left++;
+                    right--;
+
+                    while (left < right && arr[left] == arr[left - 1]) left++;
+                    while (left < right && arr[right] == arr[right - 1]) right--;
+                } else if (sum<0) {
+                    left++;
+                } else {
+                    right--;
+
+                }
+            }
+        }
+        return ans;
+    }
     public static void main(String[] args) {
         ThreeSum threeSum = new ThreeSum();
         int[] arr = {1,2,3,4,5,6};
         int target = 10;
-        int[] result = threeSum.findSum(arr,target);
-        if(result[0]!=-1){
-            System.out.println("Triplet found: "+result[0]+", "+result[1]+", "+result[2]);
+        List<List<Integer>> result = threeSum.threeSumOptimal(arr, target);
+        if(!result.isEmpty()){
+            System.out.println("Triplets found: "+result);
         }else{
             System.out.println("No triplet found.");
         }
