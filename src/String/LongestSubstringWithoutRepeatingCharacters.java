@@ -36,7 +36,6 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
         return maxLen;
     }
-
     public static void main(String[] args) {
         LongestSubstringWithoutRepeatingCharacters obj=new LongestSubstringWithoutRepeatingCharacters();
         String s="abcabcbb";
