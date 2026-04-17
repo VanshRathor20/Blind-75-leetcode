@@ -183,6 +183,8 @@ Blind-75-Leetcode/
 | 🔴 | Hard |
 | 🟠 | In Progress |
 
+---
+
 ## 🤝 Contribution
 
 Feel free to:
