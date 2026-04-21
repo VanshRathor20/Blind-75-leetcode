@@ -11,6 +11,14 @@ This repository tracks my **progress, consistency, and problem-solving skills**.
 
 ---
 
+## 📊 Overall Progress
+
+![Progress](https://progress-bar.xyz/47/?title=Blind+75&width=400&color=30a14e&scale=100&suffix=%25&color2=30a14e)
+
+> ✅ 35 / 75 Problems Solved
+
+---
+
 ## 🎯 Progress Overview
 
 | Topic | Solved | Total | Status |
@@ -19,11 +27,11 @@ This repository tracks my **progress, consistency, and problem-solving skills**.
 | Binary | 5 | 5 | ✅ Completed |
 | Linked List | 6 | 6 | ✅ Completed |
 | Matrix | 4 | 4 | ✅ Completed |
-| Tree | 4 | 13 | 🔄 In Progress |
+| Tree | 10 | 13 | 🔄 In Progress |
 | Graph | 0 | 8 | ⏳ Not Started |
 | Dynamic Programming | 0 | 11 | ⏳ Not Started |
 | Interval | 0 | 6 |  ⏳ Not Started |
-| String | 1 | 10 |  ⏳ Not Started |
+| String |0 | 10 |  ⏳ Not Started |
 | Heap | 0 | 2 | ⏳ Not Started |
 
 ---
@@ -59,7 +67,7 @@ Blind-75-Leetcode/
 | 3 | Contains Duplicate | 🟢 Easy | ✅ |
 | 4 | Product of Array Except Self | 🟢 Easy | ✅ |
 | 5 | Kadane's Algorithm — Maximum Subarray Sum | 🟡 Medium | ✅ |
-| 6 | Maximum Product Subarray | 🔴 Hard | ⬜ |
+| 6 | Maximum Product Subarray | 🔴 Hard | ✅ |
 | 7 | Find Minimum in Rotated Sorted Array | 🟢 Easy | ✅ |
 | 8 | Search in Rotated Sorted Array | 🟡 Medium | ✅ |
 | 9 | 3 Sum | 🟡 Medium | ✅ |
@@ -100,19 +108,19 @@ Blind-75-Leetcode/
 
 ---
 
-### 🔹 05. Tree (4/13) 🔄
+### 🔹 05. Tree (10/13) 🔄
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Maximum Depth in Binary Tree | 🟡 Medium | ✅ |
 | 2 | Check if Two Trees are Identical | 🟡 Medium | ✅ |
 | 3 | Invert / Flip Binary Tree | 🟡 Medium | ✅ |
-| 4 | Maximum Path Sum | 🟡 Medium | ⬜ |
+| 4 | Maximum Path Sum | 🟡 Medium | ✅ |
 | 5 | Level Order Traversal | 🟢 Easy | ✅ |
-| 6 | Serialize and De-serialize BT | 🔴 Hard | ⬜ |
-| 7 | Subtree of Another Tree | 🟢 Easy | ⬜ |
-| 8 | Construct BT from Postorder and Inorder Traversal | 🔴 Hard | ⬜ |
-| 9 | Check if a Tree is a BST | 🟡 Medium | ⬜ |
-| 10 | Find K-th Smallest Element in BST | 🟡 Medium | ⬜ |
+| 6 | Serialize and De-serialize BT | 🔴 Hard | ✅ |
+| 7 | Subtree of Another Tree | 🟢 Easy | ✅ |
+| 8 | Construct BT from Postorder and Inorder Traversal | 🔴 Hard | ✅ |
+| 9 | Check if a Tree is a BST | 🟡 Medium | ✅ |
+| 10 | Find K-th Smallest Element in BST | 🟡 Medium | ✅ |
 | 11 | LCA in BST | 🟡 Medium | ⬜ |
 | 12 | Trie Implementation and Operations | 🔴 Hard | ⬜ |
 | 13 | Trie Implementation and Advanced Operations | 🔴 Hard | ⬜ |
@@ -205,7 +213,7 @@ If this repo helps you:
 
 ## 👨‍💻 Author
 
-**Vansh Rathor**
+**Vansh Rathor** — [GitHub](https://github.com/VanshRathor20)
 
 ---
 
