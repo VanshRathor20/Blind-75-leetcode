@@ -19,10 +19,21 @@ This repository tracks my **progress, consistency, and problem-solving skills**.
 
 ---
 
+| Topic | Solved | Total | Status |# 🚀 Blind 75 LeetCode Solutions in Java
+
+[![Progress](https://img.shields.io/badge/Progress-35%2F75%20(47%25)-orange?style=for-the-badge)](https://github.com/VanshRathor20/Blind-75-leetcode)
+[![Language](https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java)](https://www.java.com/)
+[![Platform](https://img.shields.io/badge/Platform-LeetCode-yellow?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/Vansh_Rathor/)
+[![Sheet](https://img.shields.io/badge/Sheet-Blind%2075-red?style=for-the-badge)](https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z)
+
+This repository contains my solutions to the Blind 75 LeetCode problems, implemented in Java as part of my Data Structures & Algorithms (DSA) preparation.
+
+---
+
 ## 🎯 Progress Overview
 
 | Topic | Solved | Total | Status |
-|------|--------|-------|--------|
+|-------|--------|-------|--------|
 | Array | 9 | 10 | ✅ Completed |
 | Binary | 5 | 5 | ✅ Completed |
 | Linked List | 6 | 6 | ✅ Completed |
@@ -30,8 +41,8 @@ This repository tracks my **progress, consistency, and problem-solving skills**.
 | Tree | 10 | 13 | 🔄 In Progress |
 | Graph | 0 | 8 | ⏳ Not Started |
 | Dynamic Programming | 0 | 11 | ⏳ Not Started |
-| Interval | 0 | 6 |  ⏳ Not Started |
-| String |0 | 10 |  ⏳ Not Started |
+| Interval | 0 | 6 | ⏳ Not Started |
+| String | 0 | 10 | ⏳ Not Started |
 | Heap | 0 | 2 | ⏳ Not Started |
 
 ---
@@ -60,6 +71,7 @@ Blind-75-Leetcode/
 ## 📚 Topics Covered
 
 ### 🔹 01. Array (10/10)
+
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Two Sum | 🟢 Easy | ✅ |
@@ -72,10 +84,9 @@ Blind-75-Leetcode/
 | 8 | Search in Rotated Sorted Array | 🟡 Medium | ✅ |
 | 9 | 3 Sum | 🟡 Medium | ✅ |
 | 10 | Container With Most Water | 🟢 Easy | ✅ |
- 
----
 
 ### 🔹 02. Binary (5/5) ✅
+
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Sum of Two Integers | 🟢 Easy | ✅ |
@@ -83,10 +94,9 @@ Blind-75-Leetcode/
 | 3 | Counting Bits | 🟢 Easy | ✅ |
 | 4 | Find Missing Number | 🟢 Easy | ✅ |
 | 5 | Reverse Bits | 🟢 Easy | ✅ |
- 
----
 
 ### 🔹 03. Linked List (6/6) ✅
+
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Reverse a Linked List | 🟡 Medium | ✅ |
@@ -96,9 +106,8 @@ Blind-75-Leetcode/
 | 5 | Remove Nth Node from Back of LL | 🟡 Medium | ✅ |
 | 6 | Reorder List | 🟢 Easy | ✅ |
 
----
-
 ### 🔹 04. Matrix (4/4) ✅
+
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Set Matrix Zeroes | 🟡 Medium | ✅ |
@@ -106,9 +115,8 @@ Blind-75-Leetcode/
 | 3 | Rotate Matrix by 90 Degrees | 🟡 Medium | ✅ |
 | 4 | Word Search | 🔴 Hard | ✅ |
 
----
-
 ### 🔹 05. Tree (10/13) 🔄
+
 | # | Problem | Difficulty | Status |
 |---|---------|------------|--------|
 | 1 | Maximum Depth in Binary Tree | 🟡 Medium | ✅ |
@@ -125,27 +133,17 @@ Blind-75-Leetcode/
 | 12 | Trie Implementation and Operations | 🔴 Hard | ⬜ |
 | 13 | Trie Implementation and Advanced Operations | 🔴 Hard | ⬜ |
 
----
-
 ### 🔹 06. Graph (0/8) ⏳
 *(Will be added soon)*
-
----
 
 ### 🔹 07. Dynamic Programming (0/11) ⏳
 *(Will be added soon)*
 
----
-
 ### 🔹 08. Heap (0/2) ⏳
 *(Will be added soon)*
 
----
-
 ### 🔹 09. String (0/10) ⏳
 *(Will be added soon)*
-
----
 
 ### 🔹 10. Interval (0/6) ⏳
 *(Will be added soon)*
@@ -154,34 +152,35 @@ Blind-75-Leetcode/
 
 ## 💡 Key Learnings
 
-- Optimized problem-solving using Java  
-- Understanding patterns (Sliding Window, Two Pointers, DFS, BFS)  
-- Writing clean and readable code  
-- Improving time & space complexity  
+- Optimized problem-solving using Java
+- Understanding patterns (Sliding Window, Two Pointers, DFS, BFS)
+- Writing clean and readable code
+- Improving time & space complexity
 
 ---
 
 ## 🚀 Future Plan
 
-- Complete remaining **Tree problems**
-- Start **Graph + DFS/BFS**
-- Master **Dynamic Programming**
-- Finish **Heap problems**
+- Complete remaining Tree problems
+- Start Graph + DFS/BFS
+- Master Dynamic Programming
+- Finish Heap problems
 
 ---
 
 ## 🛠️ Tech Stack
 
- 
-- **Language:** Java
-- **Platform:** LeetCode / Striver's Sheet
-- **Goal:** Placement preparation — Blind 75 + DSA streak
-- **IDE:** VS Code / IntelliJ
+| | |
+|---|---|
+| Language | Java |
+| Platform | LeetCode / Striver's Sheet |
+| Goal | Placement preparation — Blind 75 + DSA streak |
+| IDE | VS Code / IntelliJ |
 
 ---
- 
+
 ## 📌 Legend
- 
+
 | Symbol | Meaning |
 |--------|---------|
 | ✅ | Solved |
@@ -196,9 +195,9 @@ Blind-75-Leetcode/
 ## 🤝 Contribution
 
 Feel free to:
-- Suggest improvements  
-- Add optimized solutions  
-- Improve code readability  
+- Suggest improvements
+- Add optimized solutions
+- Improve code readability
 
 ---
 
@@ -207,7 +206,7 @@ Feel free to:
 If this repo helps you:
 
 👉 Give it a ⭐ on GitHub  
-👉 Follow my journey  
+👉 Follow my journey
 
 ---
 
@@ -217,6 +216,5 @@ If this repo helps you:
 
 ---
 
-## 📌 Note
-
-This repository is continuously updated as I progress in my DSA journey.
+# 📌 Note
+**This repository is continuously updated as I progress in my DSA journey.**
